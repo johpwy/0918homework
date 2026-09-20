@@ -1,0 +1,49 @@
+h1 {
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+  background-color: #525c91;
+}
+
+samp {
+  font-size: 18px;
+  color: #fff;
+  background-color: #525c91;
+}
+
+.redsamp {
+  color: red;
+  background-color: #fff;
+}
+
+label {
+  line-height: 28px;
+}
+
+div {
+  border-bottom: #525c91 solid 2px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  padding: 8px 0px;
+}
+
+fieldset {
+  line-height: 40px;
+}
+
+textarea {
+  width: 400px;
+  height: 70px;
+}
+
+.sub-button {
+  background-color: blue;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.re-button {
+  background-color: red;
+  color: #fff;
+  margin-top: 8px;
+}

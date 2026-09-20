@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人報名</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <h1>個人報名 Individual Registration</h1>
+    <form action="" method="">
+      <h2><samp>基本資料 / Basic Information</samp></h2>
+      <div>
+        <label for="name">姓名 / Name<samp class="redsamp">*</samp></label>
+        <input id="name" type="text" placeholder="請輸入姓名" required />
+        <fieldset>
+          <label>性別 / Gender</label>
+          <input id="male" type="radio" name="gender" value="male" />
+          <label for="male">男 / male</label>
+          <input id="female" type="radio" name="gender" value="female" />
+          <label for="female">女 / female</label>
+        </fieldset>
+        <fieldset>
+          <label>國籍 / Nationality</label>
+          <input id="roc" type="radio" name="citizens" value="roc" checked />
+          <label for="roc">本國國籍 / ROC Citizens</label>
+          <input id="non" type="radio" name="citizens" value="non" />
+          <label for="non">外國國籍 / Non-Citizens</label>
+        </fieldset>
+        <fieldset>
+          <label for="id-number"
+            >身分證號 / ID Number<samp class="redsamp">*</samp></label
+          >
+          <input
+            id="id-number"
+            type="text"
+            name="id-number"
+            placeholder="身分證號或護照號碼"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label for="birth">出生日期 / Date Of Birth</label>
+          <input id="birth" type="date" name="birth" />
+        </fieldset>
+        <fieldset>
+          <label for="email"
+            >電子信箱 / Email<samp class="redsamp">*</samp></label
+          >
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label>聯絡電話 / Content Number</label>
+          <label for="phone">手機 / Moblie</label>
+          <input id="phone" type="tel" name="phone" placeholder="0922053012" />
+          <label for="home-tel">住家 / Home</label>
+          <input
+            id="home-tel"
+            type="tel"
+            name="home-tel"
+            placeholder="0225855659"
+          />
+          <label for="office-tel">公司 / Office</label>
+          <input id="office-tel" type="tel" name="office-tel" value="" />
+        </fieldset>
+        <figcaption>
+          <label for="city">通訊地址 / Mailing Adress</label>
+          <select name="city" id="city">
+            <option value="">請選擇縣市別 County/City</option>
+            <optgroup label="北部">
+              <option value="taipai" id="taipai" list="taipai">台北</option>
+              <option value="newaipai" id="newaipai" list="newaipai">
+                新北
+              </option>
+              <option value="taoyuan">桃園</option>
+              <option value="hsinchu">新竹</option>
+            </optgroup>
+            <optgroup label="中部">
+              <option value="taichung">台中</option>
+              <option value="changhua">彰化</option>
+              <option value="chiayi">嘉義</option>
+              <option value="nantou">南投</option>
+            </optgroup>
+          </select>
+          <select name="town">
+            <option value="town">請選擇鄉鎮區別 Township</option>
+            <datalist id="taipai">
+              <option value="大安區"></option>
+              <option value="文山區"></option>
+            </datalist>
+            <datalist id="newaipai">
+              <option value="板橋區"></option>
+              <option value="三峽區"></option>
+            </datalist>
+          </select>
+          <label for="post-code"></label>
+          <input
+            id="post-code"
+            type="text"
+            name="post-code"
+            placeholder="郵遞區號"
+            maxlength="3"
+          />
+          <input
+            id="adress"
+            type="text"
+            name="post-code"
+            placeholder="例如：昌吉街55號2樓206室"
+          />
+        </figcaption>
+        <fieldset>
+          <label for="emergency-name"
+            >緊急聯絡人 / Name of Emergency Contact</label
+          >
+          <input
+            id="emergency-name"
+            type="text"
+            name="emergency-name"
+            value=""
+          />
+          <label for="relationship">關係 / Relationship</label>
+          <input id="relationship" type="text" name="relationship" value="" />
+          <label for="emergency-tel">電話 / Phone</label>
+          <input id="emergency-tel" type="text" name="emergency-tel" value="" />
+        </fieldset>
+      </div>
+      <h2><samp>競賽項目資料 / Race Category Information</samp></h2>
+      <div>
+        <fieldset>
+          <input id="9km" type="checkbox" value="9km" />
+          <label for="9km">9KM (NTD 800)</label>
+          <select>
+            <option value="size">請選擇衣服尺寸</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <input id="3km" type="checkbox" value="9km" />
+          <label for="3km">3KM (NTD 650)</label>
+          <select>
+            <option value="size">請選擇衣服尺寸</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+        </fieldset>
+      </div>
+      <h2><samp>報到方法 / Check-in Method</samp></h2>
+      <div>
+        <fieldset>
+          <label for="postal-check-in"
+            >郵寄代理報到 / Postal delivery check-in</label
+          >
+          <input id="yes" type="radio" name="postal-check-in" value="yes" />
+          <label for="yes">是 / Y (需額外付費，限台灣本島)</label>
+          <input id="nop" type="radio" name="postal-check-in" value="nop" />
+          <label for="nop">否 / N</label><br />
+          <input id="nop" type="radio" name="postal-check-in" value="nop" />
+          <label for="nop-time"
+            >地點：花博爭豔館 (臺北市中山區玉門街1號) 時間：</label
+          >
+          <input id="nop-time" type="date" value="2026-12-17" readonly />
+          <label>~</label>
+          <input id="nop-time" type="date" value="2026-12-18" readonly />
+        </fieldset>
+      </div>
+      <h2><samp>其他 / Others</samp></h2>
+      <div>
+        <fieldset>
+          <label for="web">個人網站 / Website (選填)</label>
+          <input id="web" type="url" name="web" value="https://" />
+        </fieldset>
+        <fieldset>
+          <label for="note">備註 / Note</label>
+          <textarea
+            id="note"
+            rows="10"
+            cols="20"
+            spellcheck="false"
+            placeholder="如有特殊需求請於此說明"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="upload-photot">上傳證件照 / Upload Photo</label>
+          <input
+            id="upload-photot"
+            type="file"
+            name="upload-photot"
+            accept="image/*"
+          />
+        </fieldset>
+      </div>
+      <input class="sub-button" type="submit" value="送出報名" />
+      <input class="re-button" type="reset" value="清除填寫" />
+    </form>
+  </body>
+</html>
