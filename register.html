@@ -75,30 +75,48 @@
           <select name="city" id="city">
             <option value="">請選擇縣市別 County/City</option>
             <optgroup label="北部">
-              <option value="taipai" id="taipai" list="taipai">台北</option>
-              <option value="newaipai" id="newaipai" list="newaipai">
-                新北
-              </option>
-              <option value="taoyuan">桃園</option>
-              <option value="hsinchu">新竹</option>
+              <option value="taipai">台北市</option>
+              <option value="newaipai">新北市</option>
+              <option value="newaipai">基隆市</option>
+              <option value="taoyuan">桃園市</option>
+              <option value="hsinchu">新竹市</option>
+              <option value="hsinchu-county">新竹縣</option>
+              <option value="hsinchu-county">宜蘭縣</option>
             </optgroup>
             <optgroup label="中部">
-              <option value="taichung">台中</option>
-              <option value="changhua">彰化</option>
-              <option value="chiayi">嘉義</option>
-              <option value="nantou">南投</option>
+              <option value="taichung">台中市</option>
+              <option value="miaoli">苗栗縣</option>
+              <option value="changhua">彰化縣</option>
+              <option value="nantou">南投縣</option>
+              <option value="yunlin">雲林縣</option>
             </optgroup>
+            <optgroup label="南部"></optgroup>
+            <option value="kaohsung">高雄市</option>
+            <option value="tainan">台南市</option>
+            <option value="chiayi">嘉義市</option>
+            <option value="chiayi-county">嘉義縣</option>
+            <option value="pingtung">屏東縣</option>
           </select>
-          <select name="town">
+          <select name="town" id="town">
             <option value="town">請選擇鄉鎮區別 Township</option>
-            <datalist id="taipai">
-              <option value="大安區"></option>
-              <option value="文山區"></option>
-            </datalist>
-            <datalist id="newaipai">
-              <option value="板橋區"></option>
-              <option value="三峽區"></option>
-            </datalist>
+            <optgroup label="台北">
+              <option value="Songshan">松山區</option>
+              <option value="Xinyi">信義區</option>
+              <option value="Daan">大安區</option>
+              <option value="Zhongshan">中山區</option>
+              <option value="Zhongzheng ">中正區</option>
+              <option value="Datong ">大同區</option>
+              <option value="Wanhua">萬華區</option>
+              <option value="Wenshan">文山區</option>
+              <option value="Nangang">南港區</option>
+              <option value="Neihu">內湖區</option>
+              <option value="Shilin">士林區</option>
+              <option value="Beitou">北投區</option>
+            </optgroup>
+            <optgroup label="新北">
+              <option value="大安區">板橋區</option>
+              <option value="文山區">文山區</option>
+            </optgroup>
           </select>
           <label for="post-code"></label>
           <input
@@ -164,7 +182,13 @@
           <label for="yes">是 / Y (需額外付費，限台灣本島)</label>
           <input id="nop" type="radio" name="postal-check-in" value="nop" />
           <label for="nop">否 / N</label><br />
-          <input id="nop" type="radio" name="postal-check-in" value="nop" />
+          <input
+            id="nop"
+            type="radio"
+            name="postal-check-in"
+            value="nop"
+            checked
+          />
           <label for="nop-time"
             >地點：花博爭豔館 (臺北市中山區玉門街1號) 時間：</label
           >
